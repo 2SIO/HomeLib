@@ -30,13 +30,16 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fichierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ouvrirDossierFilmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.affichageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aideToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.TxtBxListFichier = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -54,9 +57,18 @@
             // 
             // fichierToolStripMenuItem
             // 
+            this.fichierToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ouvrirDossierFilmToolStripMenuItem});
             this.fichierToolStripMenuItem.Name = "fichierToolStripMenuItem";
             this.fichierToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
             this.fichierToolStripMenuItem.Text = "Fichier";
+            // 
+            // ouvrirDossierFilmToolStripMenuItem
+            // 
+            this.ouvrirDossierFilmToolStripMenuItem.Name = "ouvrirDossierFilmToolStripMenuItem";
+            this.ouvrirDossierFilmToolStripMenuItem.Size = new System.Drawing.Size(199, 24);
+            this.ouvrirDossierFilmToolStripMenuItem.Text = "Ouvrir dossier film";
+            this.ouvrirDossierFilmToolStripMenuItem.Click += new System.EventHandler(this.ouvrirDossierFilmToolStripMenuItem_Click);
             // 
             // optionsToolStripMenuItem
             // 
@@ -78,6 +90,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.TxtBxListFichier);
             this.groupBox1.Location = new System.Drawing.Point(12, 31);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(243, 451);
@@ -96,12 +109,20 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(951, 496);
+            this.button1.Location = new System.Drawing.Point(951, 488);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(130, 28);
             this.button1.TabIndex = 3;
             this.button1.Text = "Quick Scan";
             this.button1.UseVisualStyleBackColor = true;
+            // 
+            // TxtBxListFichier
+            // 
+            this.TxtBxListFichier.Location = new System.Drawing.Point(6, 33);
+            this.TxtBxListFichier.Multiline = true;
+            this.TxtBxListFichier.Name = "TxtBxListFichier";
+            this.TxtBxListFichier.Size = new System.Drawing.Size(231, 412);
+            this.TxtBxListFichier.TabIndex = 0;
             // 
             // FrmMain
             // 
@@ -118,6 +139,8 @@
             this.Text = "HomeLib v0.1";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -133,6 +156,8 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolStripMenuItem ouvrirDossierFilmToolStripMenuItem;
+        private System.Windows.Forms.TextBox TxtBxListFichier;
     }
 }
 

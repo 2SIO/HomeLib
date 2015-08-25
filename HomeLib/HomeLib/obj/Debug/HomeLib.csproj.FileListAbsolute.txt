@@ -1,1 +1,9 @@
 C:\Users\laure\Documents\GitHub\HomeLib\HomeLib\HomeLib\bin\Debug\HomeLib.exe.config
+C:\Users\laure\Documents\GitHub\HomeLib\HomeLib\HomeLib\bin\Debug\HomeLib.exe
+C:\Users\laure\Documents\GitHub\HomeLib\HomeLib\HomeLib\bin\Debug\HomeLib.pdb
+C:\Users\laure\Documents\GitHub\HomeLib\HomeLib\HomeLib\obj\Debug\HomeLib.csprojResolveAssemblyReference.cache
+C:\Users\laure\Documents\GitHub\HomeLib\HomeLib\HomeLib\obj\Debug\HomeLib.FrmMain.resources
+C:\Users\laure\Documents\GitHub\HomeLib\HomeLib\HomeLib\obj\Debug\HomeLib.Properties.Resources.resources
+C:\Users\laure\Documents\GitHub\HomeLib\HomeLib\HomeLib\obj\Debug\HomeLib.csproj.GenerateResource.Cache
+C:\Users\laure\Documents\GitHub\HomeLib\HomeLib\HomeLib\obj\Debug\HomeLib.exe
+C:\Users\laure\Documents\GitHub\HomeLib\HomeLib\HomeLib\obj\Debug\HomeLib.pdb

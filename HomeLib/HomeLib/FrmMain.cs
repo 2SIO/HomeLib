@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace HomeLib
 {
@@ -15,6 +16,28 @@ namespace HomeLib
         public FrmMain()
         {
             InitializeComponent();
+        }
+
+        
+        private void ouvrirDossierFilmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var pathFilm = "";
+
+            FolderBrowserDialog DossierFilm = new FolderBrowserDialog();
+            DossierFilm.ShowDialog();
+
+            pathFilm =  DossierFilm.SelectedPath;
+            
+
+            DirectoryInfo dir = new DirectoryInfo(pathFilm);
+            FileInfo[] fichiers = dir.GetFiles();
+            TxtBxListFichier.ScrollBars = ScrollBars.Vertical;
+            foreach (FileInfo fichier in fichiers)
+            {
+                
+                TxtBxListFichier.AppendText(fichier.Name+"\n\n");
+            }
+          
         }
     }
 }
